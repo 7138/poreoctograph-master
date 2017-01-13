@@ -52,10 +52,17 @@ namespace ICMinigames
 			//Code for creating a command
 			//Commands.ChatCommands.Add(new Command(permission, method, command));
             //eg. new Command("tutorial.bunny", SpawnBunny, "bunny");
-
+		Commands.ChatCommands.Add(new Command("icminigame.mgmode", MinigameMode(), "mgmode"));
             //ServerApi.Hooks
             //TShockAPI.Hooks
+	    	public void MinigameMode(CommandArgs args)
+		{
+			TSPlayer plr = args.Player;
+		
+		Group plrGroup = plr.Group;
+		plr.Group = new minigameGroup();
 		}
+	     }
 	}
 }
 		
