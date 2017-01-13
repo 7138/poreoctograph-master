@@ -28,7 +28,7 @@ namespace ICMinigames
 		//Who created the plugin
 		public override string Author
 		{
-			get { return "Raisa"; }
+			get { return "Slayr & Plad"; }
 		}
 		
 		//Describe the plugin (not necessary)
