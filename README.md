@@ -1,2 +1,2 @@
 # poreoctograph-master
-plugin thing
+The plugin which will be used on IC for minigames
