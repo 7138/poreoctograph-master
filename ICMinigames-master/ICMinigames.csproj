@@ -31,18 +31,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="TerrariaServer, Version=1.14.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLL\TerrariaServer.exe</HintPath>
+    <Reference Include="OTAPI">
+      <HintPath>..\..\..\..\Desktop\TShock 4.3.22\OTAPI.dll</HintPath>
     </Reference>
-    <Reference Include="TShockAPI, Version=4.2.0.1019, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLL\TShockAPI.dll</HintPath>
+    <Reference Include="System" />
+    <Reference Include="TerrariaServer">
+      <HintPath>..\..\..\..\Desktop\TShock 4.3.22\TerrariaServer.exe</HintPath>
+    </Reference>
+    <Reference Include="TShockAPI">
+      <HintPath>..\..\..\..\Desktop\TShock 4.3.22\ServerPlugins\TShockAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arena.cs" />
+    <Compile Include="BomberManArena.cs" />
+    <Compile Include="CTGArena.cs" />
+    <Compile Include="CTG.cs" />
+    <Compile Include="Minigame.cs" />
     <Compile Include="ICMinigames.cs" />
+    <Compile Include="MGPlayer.cs" />
+    <Compile Include="minigameGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
