@@ -44,13 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arena.cs" />
+    <Compile Include="BomberMan.cs" />
     <Compile Include="BomberManArena.cs" />
     <Compile Include="CTGArena.cs" />
     <Compile Include="CTG.cs" />
     <Compile Include="Minigame.cs" />
-    <Compile Include="ICMinigames.cs" />
+    <Compile Include="ICMG.cs" />
     <Compile Include="MGPlayer.cs" />
-    <Compile Include="minigameGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

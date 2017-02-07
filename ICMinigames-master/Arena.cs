@@ -7,7 +7,7 @@ using TerrariaApi.Server;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace ICMinigames
+namespace ICMG
 {
     public class Arena
     {

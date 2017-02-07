@@ -6,13 +6,13 @@ using TShockAPI;
 using Terraria;
 using TerrariaApi.Server;
 
-namespace ICMinigames
+namespace ICMG
 {
     public class CTGArena : Arena
     {
         public CTGArena()
         {
-            MinigameType = MinigameType.CTG;
+            minigameType = MinigameType.CTG;
         }   
     }
 }

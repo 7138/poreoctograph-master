@@ -1,4 +1,4 @@
-﻿namespace ICMinigames
+﻿namespace ICMG
 {
     public class BomberManArena
     {

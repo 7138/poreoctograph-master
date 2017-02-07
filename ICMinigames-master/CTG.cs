@@ -4,10 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Timers;
+using Terraria;
+using Terraria.UI;
 using TerrariaApi.Server;
 using TShockAPI;
 
-namespace ICMinigames
+
+namespace ICMG
 {
     public class CTG : Minigame
     {
@@ -58,7 +61,14 @@ namespace ICMinigames
 
         public override void SetupInventoryPrefabs()
         {
+            //inventory
+            //stats
+            //name
 
+            Item[] invPrefab1 = new Item[NetItem.MaxInventory];
+            invPrefab1[(int)ItemSlot.InvRow1Slot1] = TShock.Utils.GetItemById(1);
+            invPrefab1[(int)ItemSlot.InvRow1Slot1].prefix = (int)ItemPrefix.None;
+            invPrefab1[(int)ItemSlot.InvRow1Slot1].stack = 1;
         }
 
         public override void StartRound()
@@ -74,7 +84,7 @@ namespace ICMinigames
             }
 
             //Choose new inventory set
-            currentInventoryPrefab = ICMinigames.GetRand().Next(0, inventoryPrefabs.Count);
+            currentInventoryPrefab = ICMG.GetRand().Next(0, inventoryPrefabs.Count);
 
             //Respawn the players and update inventory
             for (int i = 0; i < currentPlayers.Count; ++i)
@@ -82,7 +92,7 @@ namespace ICMinigames
                 RespawnPlayer(currentPlayers[i], currentArena.spawnPoints[i].X, currentArena.spawnPoints[i].Y);
                 SendCombatText("Fight!");
 
-                ICMinigames.UpdatePlayerInventory(currentPlayers[i], inventoryPrefabs[currentInventoryPrefab]);
+                ICMG.UpdatePlayerInventory(currentPlayers[i], inventoryPrefabs[currentInventoryPrefab]);
                 currentPlayers[i].SetStats(statsPrefabs[currentInventoryPrefab].Item1, statsPrefabs[currentInventoryPrefab].Item2);
             }
 
@@ -157,7 +167,19 @@ namespace ICMinigames
 
         public override void PlayerDeath(MGPlayer player, MGPlayer killer)
         {
-            
+            if (matchTimer > -1)
+            {
+                if (killer != null)
+                {
+                    killCount[killer] += 1;
+                    ICMG.SendCombatText(killer, "+1 Kill");
+                    killer.plr.Heal(100);
+
+                }
+
+                deathCount[player] += 1;
+            }
+            base.PlayerDeath(player, killer);
         }
 
         public override void PlayerRespawn(MGPlayer player)
@@ -169,7 +191,7 @@ namespace ICMinigames
         {
             if (X == 0 && Y == 0)
             {
-                Vector2 newSpawnPoint = (origin * 16) + (currentArena.spawnPoints[ICMinigames.GetRand().Next(0, currentArena.spawnPoints.Length)] * 16);
+                Vector2 newSpawnPoint = (origin * 16) + (currentArena.spawnPoints[ICMG.GetRand().Next(0, currentArena.spawnPoints.Length)] * 16);
                 player.plr.Teleport(newSpawnPoint.X, newSpawnPoint.Y - (4 * 16));
             }
             else
@@ -178,7 +200,7 @@ namespace ICMinigames
                 player.plr.Teleport(newSpawnPoint.X, newSpawnPoint.Y - (4 * 16));
             }
 
-            ICMinigames.UpdatePlayerInventory(player, inventoryPrefabs[currentInventoryPrefab]);
+            ICMG.UpdatePlayerInventory(player, inventoryPrefabs[currentInventoryPrefab]);
             player.SetStats(statsPrefabs[currentInventoryPrefab].Item1, statsPrefabs[currentInventoryPrefab].Item2);
             player.Heal();
         }
