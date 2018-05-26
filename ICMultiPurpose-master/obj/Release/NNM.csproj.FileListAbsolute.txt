@@ -1,0 +1,14 @@
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\obj\Release\NNM.csprojResolveAssemblyReference.cache
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\obj\Release\NNM.csproj.CoreCompileInputs.cache
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\NNM.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\NNM.pdb
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\OTAPI.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\TerrariaServer.exe
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\TShockAPI.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\Newtonsoft.Json.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\HttpServer.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\MySql.Data.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\BCrypt.Net.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\bin\Release\Mono.Data.Sqlite.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\obj\Release\NNM.dll
+D:\tShock\tShock Plugins Test Server\Plugins by Me\NNM\obj\Release\NNM.pdb

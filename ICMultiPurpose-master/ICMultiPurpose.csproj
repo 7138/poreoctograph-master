@@ -8,10 +8,11 @@
     <ProjectGuid>{6ACC2AA4-1658-40B2-ACC9-DFB6C0AE0BA9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ICMultiPurpose</RootNamespace>
-    <AssemblyName>ICMultiPurpose</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>NNM</RootNamespace>
+    <AssemblyName>NNM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,32 +31,22 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OTAPI">
-      <HintPath>..\..\..\..\Desktop\TShock 4.3.22\OTAPI.dll</HintPath>
+      <HintPath>..\..\OTAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="TerrariaServer">
-      <HintPath>..\..\..\..\Desktop\TShock 4.3.22\TerrariaServer.exe</HintPath>
+      <HintPath>..\..\TerrariaServer.exe</HintPath>
     </Reference>
     <Reference Include="TShockAPI">
-      <HintPath>..\..\..\..\Desktop\TShock 4.3.22\ServerPlugins\TShockAPI.dll</HintPath>
+      <HintPath>..\..\ServerPlugins\TShockAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD:ICMinigames-master/ICMinigames.csproj
-    <Compile Include="Arena.cs" />
-    <Compile Include="BomberMan.cs" />
-    <Compile Include="BomberManArena.cs" />
-    <Compile Include="CTGArena.cs" />
-    <Compile Include="CTG.cs" />
-    <Compile Include="Minigame.cs" />
-    <Compile Include="ICMG.cs" />
-    <Compile Include="MGPlayer.cs" />
-=======
     <Compile Include="ICMultiPurpose.cs" />
->>>>>>> 2db5cea07b65e4927db94def4fb22b773fc84bf1:ICMinigames-master/ICMultiPurpose.csproj
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
