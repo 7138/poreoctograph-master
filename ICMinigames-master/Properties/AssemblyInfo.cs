@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ICMinigames")]
+[assembly: AssemblyTitle("ICMultipurpose")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("IC")]
-[assembly: AssemblyProduct("ICMinigames")]
+[assembly: AssemblyProduct("ICMultiPurpose")]
 [assembly: AssemblyCopyright("IC")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -8,8 +8,8 @@
     <ProjectGuid>{6ACC2AA4-1658-40B2-ACC9-DFB6C0AE0BA9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ICMinigames</RootNamespace>
-    <AssemblyName>ICMinigames</AssemblyName>
+    <RootNamespace>ICMultiPurpose</RootNamespace>
+    <AssemblyName>ICMultiPurpose</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,6 +43,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:ICMinigames-master/ICMinigames.csproj
     <Compile Include="Arena.cs" />
     <Compile Include="BomberMan.cs" />
     <Compile Include="BomberManArena.cs" />
@@ -51,6 +52,9 @@
     <Compile Include="Minigame.cs" />
     <Compile Include="ICMG.cs" />
     <Compile Include="MGPlayer.cs" />
+=======
+    <Compile Include="ICMultiPurpose.cs" />
+>>>>>>> 2db5cea07b65e4927db94def4fb22b773fc84bf1:ICMinigames-master/ICMultiPurpose.csproj
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
