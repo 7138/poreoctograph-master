@@ -6,62 +6,45 @@ using TerrariaApi.Server;
 using System.Collections.Generic;
 using OTAPI;
 
-namespace ICMinigames
+namespace ICMultiPurpose
 {
-	//Version of TShock API
+
 	[ApiVersion(2,0)]
 	
-	public class ICMinigames : TerrariaPlugin
+	public class ICMultiPurpose : TerrariaPlugin
 	{
-		//Get version of plugin
+
 		public override Version Version
 		{
 			get { return new Version(1, 0); }
 		}
 		
-		//Name the plugin
 		public override string Name
 		{
-			get { return "ICMinigames"; }
+			get { return "ICMultipurpose"; }
 		}
 		
-		//Who created the plugin
 		public override string Author
 		{
 			get { return "Slayr & Plad"; }
 		}
 		
-		//Describe the plugin (not necessary)
+
 		public override string Description
 		{
-			get { return "Minigames plugin for IC"; }
+			get { return "Multipurpose features plugin for IC"; }
 		}
 		
-		//Will be run first by TShock
-		//-x will be run after TShock API loads
-		//+x will be run before TShock API loads
-        public ICMinigames(Main game)
+        public ICMultiPurpose(Main game)
 			: base(game)
 		{
             Order = +4;
 		}
 		
-		//Main code area
+
 		public override void Initialize()
 		{
-			//Code for creating a command
-			//Commands.ChatCommands.Add(new Command(permission, method, command));
-            //eg. new Command("tutorial.bunny", SpawnBunny, "bunny");
-		Commands.ChatCommands.Add(new Command("icminigame.mgmode", MinigameMode(), "mgmode"));
-            //ServerApi.Hooks
-            //TShockAPI.Hooks
-	    	public void MinigameMode(CommandArgs args)
-		{
-			TSPlayer plr = args.Player;
-		
-		Group plrGroup = plr.Group;
-		plr.Group = new minigameGroup();
-		}
+
 	     }
 	}
 }
