@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clans\Clan.cs" />
     <Compile Include="Clans\DB\ClanDB.cs" />
     <Compile Include="ICMultiPurpose.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
