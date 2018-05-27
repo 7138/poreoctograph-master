@@ -5,6 +5,7 @@ using Terraria;
 using TerrariaApi.Server;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using TShockAPI.DB;
 
 namespace ICMultiPurpose
 {
@@ -12,6 +13,8 @@ namespace ICMultiPurpose
 
     public class ICMultiPurpose : TerrariaPlugin
     {
+        
+
         public override Version Version
         {
             get { return new Version(1, 0); }
@@ -53,7 +56,7 @@ namespace ICMultiPurpose
             ServerApi.Hooks.GameUpdate.Register(this, GameUpdate);
         }
 
-        void GameUpdate(EventArgs args)
+        public void GameUpdate(EventArgs args)
         {
             #region Prevent Natural Meteors
             WorldGen.spawnMeteor = false;
